@@ -1,31 +1,46 @@
+<!-- <head> -> tag onde ficam as configurações da página-->
+<!-- <body> -> tag onde ficam todos os elementos visuais da página-->
+<!-- <div> -> tag usada para criar divisões, grupos de elementos, ou seja, um container de elementos-->
+<!-- <video> -> tag usada para acrescentar um video-->
+<!-- <source> -> tag usada para determinar a fonte do video (link ou caminho dele), que será apresentado-->
+<!-- <header> -> tag que determina que tudo que estiver dentro dela faz parte do cabeçalho da página, ou seja, é o container do cabeçalho da página-->
+<!-- <a> -> tag utilizada para criar um link dentro da página, para conteúdo externo ou interno-->
+<!-- <img> -> tag utilizada para adicionar uma imagem-->
+<!-- <nav> -> é uma tag utilizada para criar elementos de navegação dentro da página, ou seja, um container para elementos de navegação-->
+<!-- <ul> -> tag usada para criar uma lista não ordenada (sem números)-->
+<!-- <li> -> tag usada para criar um elemento dentro de uma lista-->
+<!-- <p> -> tag usada para criar um parágrafo de texto corrido-->
+<!-- <hr> -> tag usada para cria uma linha horizontal-->
+<!-- <span> -> tag usada para containers em linha para conteúdos fraseados, ou seja, para textos-->
+<!-- <iframe> -> é uma tag utilizada para incorporar conteúdos multimídia de outros sites (por exemplo videos do youtube), na página-->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
+<head> <!--cabeça da página-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
-
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-
+    
     <title>GEDAIFLIX</title>
-
 </head>
 
-<body>
-    <div>
+<body> <!--Corpo da página-->
+    
+    <div> <!--Parte do video de fundo da página-->
         <video autoplay loop muted>
             <source src="./assets/video/background-video.mp4" type="video/mp4" />
         </video>
     </div>
 
-    <header>
+    <header> <!--cabeçalho da página, onde fica a logo e os links de navegação-->
         <a>
-            <img src="./assets/img/log.png" alt="LOGO-PAGINA" />
+            <img src="./assets/img/logo.png" alt="LOGO-PAGINA" />
         </a>
         <nav>
             <ul>
@@ -36,7 +51,7 @@
         </nav>
     </header>
 
-    <div>
+    <div> <!--Parte de introdução da página, onde fica o título da página e o texto de introdução-->
         <div>
             <div>
                 <img src="./assets/img/Title.png" alt="titulo-GEDAIFLIX"/>
@@ -48,7 +63,7 @@
         </div>
     </div>
 
-    <div>
+    <div> <!--Parte onde será mostrado o catálogo de videos (trailers dos filmes) da página, com cards que serão criados a partir do javascript-->
         <div>
             <hr />
             <span>Catálogo</span>
@@ -58,13 +73,14 @@
         </div>
     </div>
 
-    <div>
+    <div> <!--parte do modal, ou seja, o pop-up (elemento que fica acima de todos os elementos da tela, normalmente no meio da página), onde serão mostrados os videos (trailers dos filmes)-->
         <div>
             <span>X</span>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/IBcwY3BrQtA" title="trailer" frameborder = "1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
     </div>
+
 </body>
 
 </html>
