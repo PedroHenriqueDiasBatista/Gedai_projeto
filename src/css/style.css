@@ -54,7 +54,7 @@ body{
     content: "";
     background-color: #262b35;
     width: 100vw;
-    height: 10vh;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -120,7 +120,48 @@ body{
     gap: 85px;
 }
 
+.modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.932);
+    visibility: hidden;
+    z-index: -1;
+}
 
+.modal-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.close-modal{
+    background-color: #fff;
+    color: #f03a17;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal iframe{
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.modal.open {
+    opacity: 1;
+    visibility: visible;
+}
 
 
 
