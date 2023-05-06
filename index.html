@@ -32,18 +32,18 @@
 
 <body> <!--Corpo da página (onde ficam os elementos visuais)-->
     
-    <div> <!--Parte do video de fundo da página-->
+    <div class="background-video"> <!--Parte do video de fundo da página-->
         <video autoplay loop muted>
             <source src="./assets/video/background-video.mp4" type="video/mp4" />
         </video>
     </div>
 
-    <header> <!--cabeçalho da página, onde fica a logo e os links de navegação-->
+    <header class="header"> <!--cabeçalho da página, onde fica a logo e os links de navegação-->
         <a>
-            <img src="./assets/img/logo.png" alt="LOGO-PAGINA" />
+            <img class="logo" src="./assets/img/logo.png" alt="LOGO-PAGINA" />
         </a>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li>
                     <a href="#catalog">Catálogo</a>
                 </li>
@@ -51,20 +51,20 @@
         </nav>
     </header>
 
-    <div> <!--Parte de introdução da página, onde fica o título da página e o texto de introdução-->
-        <div>
-            <div>
-                <img src="./assets/img/Title.png" alt="titulo-GEDAIFLIX"/>
-                <p>
+    <div class="title-section"> <!--Parte de introdução da página, onde fica o título da página e o texto de introdução-->
+        <div class="title-container">
+            <div class="introduction">
+                <img class="title-image" src="./assets/img/Title.png" alt="titulo-GEDAIFLIX"/>
+                <p class="description">
                     Bem-vindo ao GEDAIFLIX - o destino perfeito para todos os fãs de Star Wars! Aqui, você pode encontrar trailers de todos os filmes da franquia principal, desde os clássicos originais até as mais recentes aventuras no universo desta magnífica saga. Explore nosso catálogo para encontrar previews emocionantes, sinopses detalhadas e muito mais. Junte-se a nós e embarque em uma jornada épica pela galáxia distante de Star Wars.
                 </p>
             </div>
-            <img src="./assets/img/page-image.png" alt="IMAGEM-DARTHVADER"/>
+            <img class="intro-image" src="./assets/img/page-image.png" alt="IMAGEM-DARTHVADER"/>
         </div>
     </div>
 
-    <div> <!--Parte onde será mostrado o catálogo de videos (trailers dos filmes) da página, com cards que serão criados a partir do javascript-->
-        <div>
+    <div class="episode-section"> <!--Parte onde será mostrado o catálogo de videos (trailers dos filmes) da página, com cards que serão criados a partir do javascript-->
+        <div id="catalog" class="catalog-title">
             <hr />
             <span>Catálogo</span>
         </div>
@@ -73,9 +73,9 @@
         </div>
     </div>
 
-    <div> <!--parte do modal, ou seja, o pop-up (elemento que fica acima de todos os elementos da tela, normalmente no meio da página), onde serão mostrados os videos (trailers dos filmes)-->
-        <div>
-            <span>X</span>
+    <div class="modal"> <!--parte do modal, ou seja, o pop-up (elemento que fica acima de todos os elementos da tela, normalmente no meio da página), onde serão mostrados os videos (trailers dos filmes)-->
+        <div class="modal-content">
+            <span class="close-modal">X</span>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/IBcwY3BrQtA" title="trailer" frameborder = "1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
