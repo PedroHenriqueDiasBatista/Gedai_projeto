@@ -118,10 +118,12 @@ function scrollToSelection(event){
     const element = event.target.getAttribute("href");
     const section = document.querySelector(element).offsetTop - 50;
 
-    window.scroll({
-        top: section,
-        behavior: "smooth"
-    })
+    // window.scroll({
+    //     top: section,
+    //     behavior: "smooth"
+    // })
+
+    smoothScrollTo(0, section, 1000);
 }
 
 menuItems.forEach(item => {
