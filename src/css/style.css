@@ -62,12 +62,12 @@ body{
 }
 
 .title-container{
-    max-width: 1440/*px*/;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: /*calc*/(100vh -/* */125px);
+    height: calc(100vh -/* */125px);
     padding: 0 30px 30px;
 }
 
@@ -86,9 +86,9 @@ body{
     margin: 30px 0;
 }
 
-/* .episode-section{
+.episode-section{
     background: linear-gradient(0deg, rgba(38,43,48,1) 60%, rgba(0,0,0,1) 100%);
-} */
+}
 
 .catalog-title{
     text-align: center;
@@ -169,7 +169,7 @@ body{
 
 .card{
     width: 400px;
-    height: /*600*/500px;
+    height: 600px;
     perspective: 700px;
 }
 
@@ -202,7 +202,7 @@ body{
 .back p{
     color: #a8adb7;
     width: 100%;
-    font-size: /*18*/25px;
+    font-size: 18px;
     margin: 30px 0;
 }
 
